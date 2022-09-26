@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WSC</title>
+   <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+   <img src="dhj.jpg" width="2550">
+   <h1>West Side Crew Biotch!</h1>
+   <button id="ASong" onClick="playPause()">
+      <audio
+        src="westside.mp3"
+        autoplay
+      ></audio>
+      Click to hear something awesome
+    </button>
+    
+    <script>
+      var aud = document.getElementById("ASong").children[0];
+      var isPlaying = false;
+      aud.pause();
+    
+      function playPause() {
+        if (isPlaying) {
+          aud.pause();
+        } else {
+          aud.play();
+        }
+        isPlaying = !isPlaying;
+      }
+    </script>
+    
+
+
+
+   <script src="index.js"></script>
+   
+</body>
+</html>
